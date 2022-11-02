@@ -10,7 +10,10 @@ createApp ({
 
       nome: "Manuel",
       cognome: "Mena",
-      fontWeight: "strong"
+      fontWeight: "strong",
+      loremPicsum: "",
+      output: "https://picsum.photos/seed/"
+
     }
 
   }

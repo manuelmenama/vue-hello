@@ -16,8 +16,12 @@
   <div id="app">
 
     <p>Questo è il primo Vuejs di: <span :class="fontWeight">{{nome}} {{cognome}}</span></p>
-    <!-- <input type="text">
-    <img :src="" alt=""> -->
+    <div>
+      <label for="input-img">Scrivi un testo qualsiasi:</label>
+      <input id="input-img" type="text" v-model="loremPicsum">
+    </div>
+    <img :src="output + loremPicsum + '/300/200'" alt="">
+    <!-- <button>Toggle img/text</button> -->
 
   </div>
 
