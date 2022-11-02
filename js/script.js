@@ -12,8 +12,18 @@ createApp ({
       cognome: "Mena",
       fontWeight: "strong",
       loremPicsum: "",
-      output: "https://picsum.photos/seed/"
+      output: "https://picsum.photos/seed/",
+      toggleImg: true,
+      toggleText: false
+    }
 
+  },
+
+  metods: {
+
+    toggleImgTxt() {
+      this.toggleImg = !this.toggleImg;
+      this.toggleText = !this.toggleText;
     }
 
   }

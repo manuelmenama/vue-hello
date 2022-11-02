@@ -14,17 +14,23 @@
 <body>
 
   <div id="app">
+    <div class="container">
 
-    <p>Questo è il primo Vuejs di: <span :class="fontWeight">{{nome}} {{cognome}}</span></p>
-    <div>
-      <label for="input-img">Scrivi un testo qualsiasi:</label>
-      <input id="input-img" type="text" v-model="loremPicsum">
+      <p>Questo è il primo Vuejs di: <span :class="fontWeight">{{nome}} {{cognome}}</span></p>
+      <div>
+        <label for="input-img">Scrivi un testo qualsiasi:</label>
+        <input id="input-img" type="text" v-model="loremPicsum">
+      </div>
+
+      <div class="center-img">
+        <img v-show="toggleImg" :src="output + loremPicsum + '/300/200'" alt="">
+        <p v-show="toggleText">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos, impedit commodi quod esse adipisci minima id, odio incidunt labore dolores ex eaque quaerat debitis ipsum? Eius quia voluptate pariatur autem.</p>
+        <button @click="toggleImgTxt()">Toggle img/text</button>
+      </div>
+
     </div>
-    <img :src="output + loremPicsum + '/300/200'" alt="">
-    <!-- <button>Toggle img/text</button> -->
 
   </div>
-
 
   <script src="js/script.js"></script>
   
