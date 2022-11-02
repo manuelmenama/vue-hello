@@ -19,7 +19,7 @@ createApp ({
 
   },
 
-  metods: {
+  methods: {
 
     toggleImgTxt() {
       this.toggleImg = !this.toggleImg;
